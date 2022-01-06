@@ -16,12 +16,12 @@ class BankMachine {
 
   deposit = (amount, date) => {
     this.accountBalance.deposit(amount);
-    this.accountTransactions.addTransaction({ amount, type: 'credit', date, balance: this.accountBalance.balance });
+    this.accountTransactions.addTransaction({ amount: amount, type: 'credit', date: date, balance: this.accountBalance.balance });
   };
 
   withdraw = (amount, date) => {
     this.accountBalance.withdraw(amount);
-    this.accountTransactions.addTransaction({ amount, type: 'debit', date, balance: this.accountBalance.balance });
+    this.accountTransactions.addTransaction({ amount: amount, type: 'debit', date: date, balance: this.accountBalance.balance });
   };
 
   printStatement = () => {
