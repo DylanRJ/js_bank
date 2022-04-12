@@ -1,5 +1,7 @@
 # Bank
 
+This is a simple program which allows a user to create a new bank account, deposit and withdraw money. Also, a user can print transactions history statement which is printed with the newest transaction first. The user's balance is stored and can be viewed within the application.
+
 ## How to install
 
 In your terminal, follow these steps:
